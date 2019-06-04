@@ -10,12 +10,24 @@ public class QuizFiveSix {
 		System.out.println(result);
 		
 		
+		String result1=studying(null);
+		System.out.println(result1);
+		
+		
 	}
 	
 	public static String studying(String name)
 	{
 		
-		return name+" is studying";
+		if(name==null)
+		{
+			return "Nobody is studying";
+		}
+	
+		else
+		{
+			return name+" is studying";
+		}
 	}
 
 }
